@@ -1,7 +1,9 @@
 import React from 'react';
+import CommandsDescription from './CommandsDescription';
 
 export default () => (
     <div>
-        Home Page
+        Documentation
+        <CommandsDescription/>
     </div>
 )

@@ -1,5 +1,7 @@
-import React from 'react';
-import { Divider } from 'antd';
+import React, { useState } from 'react';
+import { Divider, Input } from 'antd';
+
+const Search = Input.Search;
 
 const commands = [
     {
@@ -216,9 +218,54 @@ const commands = [
     },
 ]
 
+const description = [
+'Command is atomic part of test scenario created in Overlight Test Automation. Command can be executed on page site to simulate events or by directly by overlight.',
+'To add command to your scenario use command creator (click "Add Command" Button) or record sequence of commands by making actions on page. Recorded scenarios can be used as base for your test scenarios, but to create best scenarios yous should never used "Direct Paths" used by recorder.',
+'Every command executed on page have special parameter "Iframe Path" used to find proper Iframe on page. To set it just open command creator, make any action on iframe and then click on alert sign next to IFrame Path input.' 
+]
+export default () => {
+    const [searchPhrase, setSearchPhrase] = useState('')
+    const search = searchPhrase.toLowerCase()
 
-export default () => (
-    <div>
-        <Divider>Commands Description</Divider>
-    </div>
-)
+    return (
+        <div className='frame-item'>
+            <div style={{paddingLeft: '30px', paddingRight: '30px' }}>
+                {
+                    description.map(v => <div>{v}</div>)
+                }
+            </div>
+            <Divider>Commands</Divider>
+            <div style={{paddingLeft: '30px', paddingRight: '30px' }}>
+                <Search
+                    placeholder="Command..."
+                    onChange={e => setSearchPhrase(e.target.value)}
+                    value={searchPhrase}
+                />
+            </div>
+            <div>
+                {
+                    commands
+                        .filter(v => v.name.toLocaleLowerCase().includes(search))
+                        .map(command => (
+                        <>
+                            <Divider orientation="left">{command.name}</Divider>
+                            <div style={{paddingLeft: '10px'}}>
+                                <p>{command.description}</p>
+                                <div>
+                                    {
+                                        command.args.map(arg => (
+                                            <div>
+                                                <span style={{fontWeight: '500'}}>{arg.name + ': '}</span>
+                                                {arg.description}
+                                            </div>
+                                        ))
+                                    }
+                                </div>
+                            </div>
+                        </>
+                    ))
+                }
+            </div>
+        </div>
+    )
+}

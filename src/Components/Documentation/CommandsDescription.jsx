@@ -228,43 +228,45 @@ export default () => {
     const search = searchPhrase.toLowerCase()
 
     return (
-        <div className='frame-item'>
-            <div style={{paddingLeft: '30px', paddingRight: '30px' }}>
-                {
-                    description.map(v => <div>{v}</div>)
-                }
-            </div>
-            <Divider>Commands</Divider>
-            <div style={{paddingLeft: '30px', paddingRight: '30px' }}>
-                <Search
-                    placeholder="Command..."
-                    onChange={e => setSearchPhrase(e.target.value)}
-                    value={searchPhrase}
-                />
-            </div>
-            <div>
-                {
-                    commands
-                        .filter(v => v.name.toLocaleLowerCase().includes(search))
-                        .map(command => (
-                        <>
-                            <Divider orientation="left">{command.name}</Divider>
-                            <div style={{paddingLeft: '10px'}}>
-                                <p>{command.description}</p>
-                                <div>
-                                    {
-                                        command.args.map(arg => (
-                                            <div>
-                                                <span style={{fontWeight: '500'}}>{arg.name + ': '}</span>
-                                                {arg.description}
-                                            </div>
-                                        ))
-                                    }
+        <div className='frame-item-container'>
+            <div className='frame-item'>
+                <div className='frame-content-text'>
+                    {
+                        description.map((v, index) => <div key={index}>{v}</div>)
+                    }
+                </div>
+                <Divider>Available Commands</Divider>
+                <div className='frame-content-text'>
+                    <Search
+                        placeholder="Command..."
+                        onChange={e => setSearchPhrase(e.target.value)}
+                        value={searchPhrase}
+                    />
+                </div>
+                <div>
+                    {
+                        commands
+                            .filter(v => v.name.toLocaleLowerCase().includes(search))
+                            .map((command, index) => (
+                            <div key={index}>
+                                <Divider orientation="left">{command.name}</Divider>
+                                <div className='frame-content-text'>
+                                    <p>{command.description}</p>
+                                    <div>
+                                        {
+                                            command.args.map((arg, argIndex) => (
+                                                <div key={argIndex}>
+                                                    <span style={{fontWeight: '500'}}>{arg.name + ': '}</span>
+                                                    {arg.description}
+                                                </div>
+                                            ))
+                                        }
+                                    </div>
                                 </div>
                             </div>
-                        </>
-                    ))
-                }
+                        ))
+                    }
+                </div>
             </div>
         </div>
     )

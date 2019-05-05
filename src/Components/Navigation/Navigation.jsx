@@ -1,8 +1,10 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import { withRouter } from 'react-router-dom'
 import logo from '../../Resources/Images/logo.png'
 import { Link } from 'react-router-dom'
 import { Menu } from 'antd';
+import classnames from 'classnames';
+import'./Navigation.css'
 
 const tabs = [
     {key: '/home', label: 'Home', },
@@ -14,7 +16,7 @@ const tabs = [
 const Nav = ({location}) => {
 
     return (
-        <div className='ant-row' style={{display: 'flex'}}>
+        <div className={classnames('ol-header')}>
             <div style={{ borderBottom: '1px solid #e8e8e8', paddingTop: '5px', paddingLeft: '10px', paddingRight: '20px'}}>
                 <img src={logo} alt='overlight logo'/>
             </div>

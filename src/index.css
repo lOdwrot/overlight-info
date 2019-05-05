@@ -13,11 +13,38 @@ code {
     monospace;
 }
 
+.frame-item-container {
+  padding: 20px;
+}
+
 .frame-item {
   border-radius: 15px;
   border: 1px solid rgb(232, 232, 232);
   background: white;
-  margin: 40px;
   padding-bottom: 15px;
   padding-top: 15px;
+  margin: 15px;
+}
+
+.frame-content-text {
+  padding-left: 25px;
+  padding-right: 25px;
+}
+
+.ant-carousel .slick-slide {
+  text-align: center;
+  height: 160px;
+  line-height: 160px;
+  background: #364d79;
+  overflow: hidden;
+}
+
+.image-documentation-container {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  margin-left: 15px;
+  width: 600px;
+  min-height: 250px;
+  float: right;
 }

@@ -6,8 +6,8 @@ import ElementsReferences from './ElementsReferences';
 const tabs = [
     {key: 'Commands', component: <CommandsDescription/>},
     {key: 'Elements References', component: <ElementsReferences/>},
-    {key: 'Parameters And Variables', component: <CommandsDescription/>},
-    {key: 'Overlight Interface', component: <CommandsDescription/>},
+    // {key: 'Parameters And Variables', component: <CommandsDescription/>},
+    // {key: 'Overlight Interface', component: <CommandsDescription/>},
 ]
 
 export default () => {

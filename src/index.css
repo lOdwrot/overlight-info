@@ -47,4 +47,6 @@ code {
   width: 600px;
   min-height: 250px;
   float: right;
+  max-width: 70vw;
+  margin-top: -20px
 }

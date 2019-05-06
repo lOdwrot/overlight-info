@@ -7,6 +7,7 @@ import Home from './Components/Home/Home';
 import Contact from './Components/Contact/Contact';
 import Documentation from './Components/Documentation/Documentation';
 import NotReady from './Components/NotReady/NotReady';
+import QuickStart from './Components/QuickStart/QuickStart';
 
 function App() {
   return (
@@ -16,7 +17,7 @@ function App() {
         <Route path='/home' component={Home} />
         <Route path='/contact' component={Contact} />
         <Route path='/documentation' component={Documentation} />
-        <Route path='/quickStart' component={NotReady} />
+        <Route path='/quickStart' component={QuickStart} />
         <Redirect from="/" to="home" />
       </Switch>
     </div>

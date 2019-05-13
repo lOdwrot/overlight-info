@@ -17,7 +17,7 @@ const Nav = ({location}) => {
 
     return (
         <div className={classnames('ol-header')}>
-            <div style={{ borderBottom: '1px solid #e8e8e8', paddingTop: '5px', paddingLeft: '10px', paddingRight: '20px'}}>
+            <div className='hide-small-screeen' style={{ borderBottom: '1px solid #e8e8e8', paddingTop: '5px', paddingLeft: '10px', paddingRight: '20px'}}>
                 <img src={logo} alt='overlight logo'/>
             </div>
             <Menu

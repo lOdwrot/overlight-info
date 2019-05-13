@@ -1,10 +1,9 @@
 import React, { useState } from 'react'
-import {Input, Button, Form, Menu, Dropdown} from 'antd'
+import {Input, Button, Form} from 'antd'
 import styles from './QuickStart.module.scss'
 import {shuffle} from 'lodash'
 import classnames from 'classnames'
 
-const { SubMenu } = Menu
 const FormItem = Form.Item
 
 export default () => {

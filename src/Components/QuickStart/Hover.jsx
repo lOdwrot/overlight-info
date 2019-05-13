@@ -10,6 +10,7 @@ export default () => {
         <>
             <div className={styles['section-comment']}>
                 Overlight uses only visible page elements. Before item hidden by hover class will be clicked, just use Mouse Over command.
+                <span style={{color: 'red'}}> Make sure page is not zoomed when executing this command (ctrl + 0) and element need is in visible part of page.</span>
             </div>
             <FormItem help={'Click Item In Menu'}>
                 <Dropdown overlay={contextMenu1()}>

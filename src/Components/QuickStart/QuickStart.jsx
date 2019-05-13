@@ -6,6 +6,8 @@ import DragAndDrop from './DragAndDrop';
 import ExecuteAnother from './ExecuteAnother';
 import Lockers from './Lockers';
 import ProgresSteper from './ProgresSteper';
+import InfinityLocker from './InfinityLocker';
+import BoxBehaviour from './BoxBehaviour';
 
 const introduction = `This page was created as sandbox and is great entry point to start with Overilght. Just download, import and play scenario below.`
 export const sections = [
@@ -14,6 +16,8 @@ export const sections = [
     {name: 'Drag And Drop', component: <DragAndDrop/>},
     {name: 'Execute Another Scenario', component: <ExecuteAnother/>},
     {name: 'Lockers', component: <Lockers/>},
+    {name: 'Infinity Locker', component: <InfinityLocker/>},
+    {name: 'Box Behaviour', component: <BoxBehaviour/>},
 ]
 
 

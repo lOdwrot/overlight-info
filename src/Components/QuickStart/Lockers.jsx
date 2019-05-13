@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { Steps, Button, Icon } from 'antd'
+import { Steps, Button, Icon, Modal } from 'antd'
 import styles from './QuickStart.module.scss'
 import classnames from 'classnames'
 
@@ -18,6 +18,12 @@ export default () => {
     }
 
     const clickNext = () => {
+        if(isLockerVisible) return (
+            Modal.error({
+                title: 'Wait untli spinner disappear!',
+                message: 'Use locker mechasim to make sure button will be clicked after spinner disappear.'  
+            })
+        )
         setLockerVisible(true)
         setTimeout(() => {
             setActiveStep(activeStep + 1)

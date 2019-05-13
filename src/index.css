@@ -15,6 +15,8 @@ code {
 
 .frame-item-container {
   padding: 20px;
+  font-size: 1.1em;
+  color: #777;
 }
 
 .frame-item {
@@ -44,9 +46,14 @@ code {
   background-position: center;
   background-size: contain;
   margin-left: 15px;
-  width: 600px;
-  min-height: 250px;
+  width: 60%;
+  min-width: 400px;
+  height: 350px;
   float: right;
   max-width: 70vw;
   margin-top: -20px
+}
+
+.ant-divider-inner-text {
+  font-size: 1.2em
 }

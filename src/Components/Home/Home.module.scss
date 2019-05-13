@@ -1,0 +1,28 @@
+.home-screen h3 {
+    color: #1890ff;
+    font-size: 32px;
+}
+
+.icon {
+    margin-right: '20px'
+}
+
+.home-screen p {
+    font-size: 1.2em;
+    color: #777;
+}
+
+.features-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap
+}
+
+.features-container > div {
+    width: 700px;
+}
+
+.features-container h2{
+    color: #0b5aa3;
+}

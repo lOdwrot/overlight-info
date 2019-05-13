@@ -3,6 +3,61 @@ import { Divider, Input } from 'antd';
 
 const Search = Input.Search;
 
+export default () => {
+    const [searchPhrase, setSearchPhrase] = useState('')
+    const search = searchPhrase.toLowerCase()
+
+    return (
+        <div className='frame-item-container'>
+            <div className='frame-item'>
+                <div className='frame-content-text'>
+                    {
+                        description.map((v, index) => <div key={index}>{v}</div>)
+                    }
+                </div>
+                <Divider>Available Commands</Divider>
+                <div className='frame-content-text'>
+                    <Search
+                        placeholder="Command..."
+                        onChange={e => setSearchPhrase(e.target.value)}
+                        value={searchPhrase}
+                    />
+                </div>
+                <div>
+                    {
+                        commands
+                            .filter(v => v.name.toLocaleLowerCase().includes(search))
+                            .map((command, index) => (
+                            <div key={index}>
+                                <Divider orientation="left">{command.name}</Divider>
+                                <div className='frame-content-text'>
+                                    <p>{command.description}</p>
+                                    <div>
+                                        {
+                                            command.args.map((arg, argIndex) => (
+                                                <div key={argIndex}>
+                                                    <span style={{fontWeight: '500'}}>{arg.name + ': '}</span>
+                                                    {arg.description}
+                                                </div>
+                                            ))
+                                        }
+                                    </div>
+                                </div>
+                            </div>
+                        ))
+                    }
+                </div>
+            </div>
+        </div>
+    )
+}
+
+const description = [
+    'Command is atomic part of test scenario created in Overlight Test Automation. Command can be executed on page site to simulate events or by directly by overlight.',
+    'To add command to your scenario use command creator (click "Add Command" Button) or record sequence of commands by making actions on page. Recorded scenarios can be used as base for your test scenarios, but to create best scenarios yous should never used "Direct Paths" used by recorder.',
+    'Every command executed on page have special parameter "Iframe Path" used to find proper Iframe on page. To set it just open command creator, make any action on iframe and then click on alert sign next to IFrame Path input.' 
+]
+
 const commands = [
     {
         name: 'Click',
@@ -217,57 +272,3 @@ const commands = [
         ]
     },
 ]
-
-const description = [
-'Command is atomic part of test scenario created in Overlight Test Automation. Command can be executed on page site to simulate events or by directly by overlight.',
-'To add command to your scenario use command creator (click "Add Command" Button) or record sequence of commands by making actions on page. Recorded scenarios can be used as base for your test scenarios, but to create best scenarios yous should never used "Direct Paths" used by recorder.',
-'Every command executed on page have special parameter "Iframe Path" used to find proper Iframe on page. To set it just open command creator, make any action on iframe and then click on alert sign next to IFrame Path input.' 
-]
-export default () => {
-    const [searchPhrase, setSearchPhrase] = useState('')
-    const search = searchPhrase.toLowerCase()
-
-    return (
-        <div className='frame-item-container'>
-            <div className='frame-item'>
-                <div className='frame-content-text'>
-                    {
-                        description.map((v, index) => <div key={index}>{v}</div>)
-                    }
-                </div>
-                <Divider>Available Commands</Divider>
-                <div className='frame-content-text'>
-                    <Search
-                        placeholder="Command..."
-                        onChange={e => setSearchPhrase(e.target.value)}
-                        value={searchPhrase}
-                    />
-                </div>
-                <div>
-                    {
-                        commands
-                            .filter(v => v.name.toLocaleLowerCase().includes(search))
-                            .map((command, index) => (
-                            <div key={index}>
-                                <Divider orientation="left">{command.name}</Divider>
-                                <div className='frame-content-text'>
-                                    <p>{command.description}</p>
-                                    <div>
-                                        {
-                                            command.args.map((arg, argIndex) => (
-                                                <div key={argIndex}>
-                                                    <span style={{fontWeight: '500'}}>{arg.name + ': '}</span>
-                                                    {arg.description}
-                                                </div>
-                                            ))
-                                        }
-                                    </div>
-                                </div>
-                            </div>
-                        ))
-                    }
-                </div>
-            </div>
-        </div>
-    )
-}

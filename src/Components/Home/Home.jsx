@@ -38,7 +38,7 @@ export default () => (
 const data = [
     {
         header: 'Code Free',
-        content: 'Overlight is totally code free. Every step is created with intuitive creators and all steps are visible on clear list together with command parameters.',
+        content: 'Overlight is totally code free. Every step is created with intuitive creators and all steps are visible on clear list together with commands parameters.',
         icon: 'profile'
     },
     {

@@ -1,6 +1,7 @@
 .home-screen h3 {
     color: #1890ff;
     font-size: 32px;
+    text-align: center;
 }
 
 .icon {
@@ -14,13 +15,17 @@
 
 .features-container {
     display: flex;
-    align-items: center;
+    align-items: stretch;
     justify-content: space-around;
-    flex-wrap: wrap
+    flex-wrap: wrap;
 }
 
 .features-container > div {
-    width: 700px;
+    flex-grow: 1; 
+    flex-shrink: 1; 
+    flex-basis: 500px;
+    margin-left: 50px; 
+    margin-right: 50px; 
 }
 
 .features-container h2{

@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { Divider } from 'antd'
 import TypeAndClick from './TypeAndClick';
 import Hover from './Hover';
@@ -13,25 +13,31 @@ import styles from './QuickStart.module.scss'
 import classnames from 'classnames'
 import AssertEquals from './AssertEquals';
 
-
 const introduction = `This page was created as sandbox and is great entry point to start with Overilght.`
-export const sections = [
-    {name: 'Type And Click', component: <TypeAndClick/>},
-    {name: 'Mouse Over / Focus / Hover', component: <Hover/>},
-    {name: 'Drag And Drop', component: <DragAndDrop/>},
-    {name: 'Execute Another Scenario', component: <ExecuteAnother/>},
-    {name: 'Lockers', component: <Lockers/>},
-    {name: 'Infinity Locker', component: <InfinityLocker/>},
-    {name: 'Box Behaviour', component: <BoxBehaviour/>},
-    {name: 'Variable Processing', component: <VariablesProcessing/>},
-    {name: 'Assert Equals', component: <AssertEquals/>},
-]
-
 
 export default () => {
+    const [stepsStatus, setStepsStatus] = useState([...Array(8)].reduce((acc, v, index) => ({...acc, [index]: false}), {}))
+    const setStepStatus = (stepNumb) => (value) => {
+        const nextState = {...stepsStatus, [stepNumb]: value}
+        console.log('nextSteps', nextState)
+        setStepsStatus(nextState)
+    }
+
+    const sections = [
+        {name: 'Type And Click', component: <TypeAndClick setStepStatus={setStepStatus(0)}/>},
+        {name: 'Mouse Over / Focus / Hover', component: <Hover setStepStatus={setStepStatus(1)}/>},
+        {name: 'Drag And Drop', component: <DragAndDrop setStepStatus={setStepStatus(2)}/>},
+        {name: 'Execute Another Scenario', component: <ExecuteAnother setStepStatus={setStepStatus(3)}/>},
+        {name: 'Lockers', component: <Lockers setStepStatus={setStepStatus(4)}/>},
+        {name: 'Infinity Locker', component: <InfinityLocker setStepStatus={setStepStatus(5)}/>},
+        {name: 'Box Behaviour', component: <BoxBehaviour setStepStatus={setStepStatus(6)}/>},
+        {name: 'Variable Processing', component: <VariablesProcessing setStepStatus={setStepStatus(7)}/>},
+        {name: 'Assert Equals', component: <AssertEquals/>},
+    ]
+
     return (
         <div>
-            <ProgresSteper/>
+            <ProgresSteper stepsStatus={stepsStatus}/>
             <div className={classnames('frame-item-container', styles['main-frame'])} >
                 <div className='frame-item'>
                     <div className='frame-content-text'>

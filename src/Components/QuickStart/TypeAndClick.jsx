@@ -3,14 +3,17 @@ import {Input, Button, Form} from 'antd'
 import styles from './QuickStart.module.scss'
 
 const FormItem = Form.Item
+const correctText = 'Overlight is Awesome'
 
-export default () => {
+export default ({setStepStatus}) => {
     const [text, setText] = useState('')
+
+    const check = () => setStepStatus(text === correctText)
 
     return (
         <>
             <div className={styles['section-comment']}>
-                Just Type "Overlight is Awesome" to input below and click button.
+                {`Just Type "${correctText}" to input below and click button.`}
             </div>
             <FormItem help={'Awesome Input'}>
                 <div style={{display: 'flex'}}>
@@ -20,7 +23,7 @@ export default () => {
                         onChange={(e) => setText(e.target.value)}
                         placeholder="Awesome Input"
                     />
-                    <Button>
+                    <Button onClick={check}>
                         Check Awesome Input
                     </Button>
                 </div>

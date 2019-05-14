@@ -8,14 +8,26 @@ const FormItem = Form.Item
 const names = ['Adam', 'John', 'Agnes', 'Alice', 'Frances', 'Mario']
 const surnames = ['Smith', 'Murphy', 'Jones', 'Williams', 'Miller', 'Bros']
 
-export default () => {
+export default ({setStepStatus}) => {
     const [name, setName] = useState('')
     const [surname, setSurname] = useState('')
     const [userInput, setInput] = useState('')
+    const [expectedInput, setExpectedInput] = useState('')
 
     const resetNames = () => {
-        setName(sample(names))
-        setSurname(sample(surnames))
+        const nextName = sample(names)
+        const nextSurname = sample(surnames)
+        setName(nextName)
+        setSurname(nextSurname)
+        setExpectedInput(`${(new Date()).getFullYear()}_${nextName}_${nextSurname}`)
+        setStepStatus(false)
+    }
+
+    const changeInput = (e) => {
+        const value = e.target.value
+        setInput(e.target.value)
+        console.log('X', value, expectedInput, value === expectedInput)
+        if(value === expectedInput) {setStepStatus(true)}
     }
 
     useEffect(() => {
@@ -44,7 +56,7 @@ export default () => {
                     <FormItem help={'Set Data In Format "CURRENTYEAR_NAME_SURNAME"'} className={styles['form-input']} style={{paddingTop: '15px'}}>
                         <Input
                             value={userInput}
-                            onChange={(e) => setInput(e.target.value)}
+                            onChange={changeInput}
                         />
                     </FormItem>
                 </div>

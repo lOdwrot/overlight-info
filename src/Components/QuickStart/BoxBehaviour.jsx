@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import {Button} from 'antd'
 import styles from './QuickStart.module.scss'
 
-export default () => {
+export default ({setStepStatus}) => {
     const [isAlertDone, setAlertDone] = useState(false)
     const [confirmState, setConfirmState] = useState(false)
 
@@ -13,6 +13,7 @@ export default () => {
 
     const showConfirmClick = () => {
         setConfirmState(JSON.stringify(window.confirm('Confirm Box')))
+        setStepStatus(true)
     }
 
     return (

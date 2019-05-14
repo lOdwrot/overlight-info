@@ -8,13 +8,14 @@ const Step = Steps.Step
 const steps = ['First', 'Second', 'Last']
 
 
-export default () => {
+export default ({setStepStatus}) => {
     const [activeStep, setActiveStep] = useState(0)
     const [isLockerVisible, setLockerVisible] = useState(false)
 
     const reset = () => {
         setActiveStep(0)
         setLockerVisible(false)
+        setStepStatus(false)
     }
 
     const clickNext = () => {
@@ -26,6 +27,8 @@ export default () => {
         )
         setLockerVisible(true)
         setTimeout(() => {
+            const nextStep = activeStep + 1
+            if (nextStep === 2) { setStepStatus(true) }
             setActiveStep(activeStep + 1)
             setLockerVisible(false)
         }, 1500)

@@ -4,11 +4,18 @@ import styles from './QuickStart.module.scss'
 import classnames from 'classnames'
 
 
-export default () => {
+export default ({setStepStatus}) => {
     const [isLockerVisible, setLockerVisible] = useState(false)
 
-    const showSpinner = () => setLockerVisible(true)
-    const hideSpinner = () => setLockerVisible(false)
+    const showSpinner = () => {
+        setStepStatus(false)
+        setLockerVisible(true)
+    }
+
+    const hideSpinner = () => {
+        setStepStatus(true)
+        setLockerVisible(false)
+    }
 
     return (
         <>

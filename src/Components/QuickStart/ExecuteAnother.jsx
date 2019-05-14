@@ -6,9 +6,13 @@ import classnames from 'classnames'
 
 const FormItem = Form.Item
 
-export default () => {
+export default ({setStepStatus}) => {
     const [fields, setFields] = useState(['Name', 'Surname', 'Street', 'City'])
     const [values, setValues] = useState({})
+
+    const checkForm = () => setStepStatus(
+        fields.reduce((acc, v) => (acc && !! values[v]), true)
+    )
 
     return (
         <>
@@ -34,7 +38,7 @@ export default () => {
                     }}>
                         Clear And Shuffle
                     </Button>
-                    <Button type="primary">Check Form</Button>
+                    <Button type="primary" onClick={checkForm}>Check Form</Button>
                 </div>
             </div>
         </>

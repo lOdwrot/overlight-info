@@ -58,8 +58,22 @@ code {
   font-size: 1.2em
 }
 
+.show-small-screen {
+  display: none
+}
+
 @media (max-width: 800px) {
   .hide-small-screeen {
+    display: none;
+  }
+
+  .show-small-screen  {
+    display: block;
+  }
+}
+
+@media (max-width: 650px) {
+  .image-documentation-container {
     display: none;
   }
 }

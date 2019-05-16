@@ -21,7 +21,7 @@ const Nav = ({location}) => {
                 <img src={logo} alt='overlight logo'/>
             </div>
             <Menu
-                style={{fontSize: 18, width: '100vw'}}
+                style={{fontSize: 18}}
                 selectedKeys={[location.pathname]}
                 mode="horizontal"
             >
@@ -35,7 +35,6 @@ const Nav = ({location}) => {
                     ))
                 }
             </Menu>
-        
         </div>
     )
 }

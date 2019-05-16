@@ -36,34 +36,42 @@ export default () => {
     ]
 
     return (
-        <div>
-            <ProgresSteper stepsStatus={stepsStatus}/>
-            <div className={classnames('frame-item-container', styles['main-frame'])} >
+        <>
+            <div className={classnames('frame-item-container', 'show-small-screen')}>
                 <div className='frame-item'>
                     <div className='frame-content-text'>
-                        {introduction}
+                        Quick Start Available only on bigger screen (min 800px width).
                     </div>
-                    <Divider orientation="left">Preparation</Divider>
-                    <div className='frame-content-text'>
-                        <div>1. Download overlight from google store (<a href='https://chrome.google.com/webstore/detail/overlight-test-automation/omngiidfgggcagkekmiiphinjmidppij'>here</a>)</div>
-                        <div>2. Download scenario that lead you throug Quick Start (<a href='https://drive.google.com/file/d/1JfB2vL0HyvLpxbF-cV8LhudVjKFb_fMQ/view?usp=sharing'>here</a>)</div>
-                        <div>3. Import Scenario to Overlight (Button Import Scenarios on left sidebar)</div>
-                        <div>4. Click Set Card and select tab where scenario will be executed (click any element on this page)</div>
-                        <div>5. Play imported scenario (Quick Start) or open and modifie it</div>
-                    </div>
-                    {
-                        sections.map((v, index) => (
-                            <div key={index}>
-                                <Divider orientation="left">{v.name}</Divider>
-                                <div className='frame-content-text'>
-                                    {v.component}
-                                </div>
-                            </div>
-                        ))
-                    }
                 </div>
             </div>
-            
-        </div>
+            <div className="hide-small-screeen">
+                <ProgresSteper stepsStatus={stepsStatus}/>
+                <div className={classnames('frame-item-container', styles['main-frame'])} >
+                    <div className='frame-item'>
+                        <div className='frame-content-text'>
+                            {introduction}
+                        </div>
+                        <Divider orientation="left">Preparation</Divider>
+                        <div className='frame-content-text'>
+                            <div>1. Download overlight from google store (<a href='https://chrome.google.com/webstore/detail/overlight-test-automation/omngiidfgggcagkekmiiphinjmidppij'>here</a>)</div>
+                            <div>2. Download scenario that lead you throug Quick Start (<a href='https://drive.google.com/file/d/1JfB2vL0HyvLpxbF-cV8LhudVjKFb_fMQ/view?usp=sharing'>here</a>)</div>
+                            <div>3. Import Scenario to Overlight (Button Import Scenarios on left sidebar)</div>
+                            <div>4. Click Set Card and select tab where scenario will be executed (click any element on this page)</div>
+                            <div>5. Play imported scenario (Quick Start) or open and modifie it</div>
+                        </div>
+                        {
+                            sections.map((v, index) => (
+                                <div key={index}>
+                                    <Divider orientation="left">{v.name}</Divider>
+                                    <div className='frame-content-text'>
+                                        {v.component}
+                                    </div>
+                                </div>
+                            ))
+                        }
+                    </div>
+                </div>
+            </div>
+        </>
     )
 }

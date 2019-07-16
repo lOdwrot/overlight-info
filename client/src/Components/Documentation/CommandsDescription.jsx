@@ -53,19 +53,19 @@ export default () => {
 }
 
 const description = [
-    'Command is atomic part of test scenario created in Overlight Test Automation. Command can be executed on page site to simulate events or by directly by overlight.',
-    'To add command to your scenario use command creator (click "Add Command" Button) or record sequence of commands by making actions on page. Recorded scenarios can be used as base for your test scenarios, but to create best scenarios yous should never used "Direct Paths" used by recorder.',
-    'Every command executed on page have special parameter "Iframe Path" used to find proper Iframe on page. To set it just open command creator, make any action on iframe and then click on alert sign next to IFrame Path input.' 
+    'A command is an atomic part of a test scenario created in Overlight Test Automation. A command can be executed on a page side to simulate events or directly by Overlight.',
+    'To add a command to your scenario use Command Creator (click "Add Command" Button) or record a sequence of commands by making actions on the page. Recorded scenarios can be used as a base for your test scenarios, but to create the best scenarios yous should never use "Direct Paths" utilized by the recorder.',
+    'Every command executed on the page has a special parameter "Iframe Path" used to find proper Iframe on the page. To set it, just open the Command Creator, make any action on the Iframe and then click on the alert sign next to IFrame Path input.' 
 ]
 
 const commands = [
     {
         name: 'Click',
-        description: 'Command simulate standard click on any page element.',
+        description: 'Simulate standard click on any page element.',
         args: [
             {
                 name: 'Target Element',
-                description: 'Description of element on page that will be clicked.'
+                description: 'Description of element on a page that will be clicked.'
             },
             {
                 name: 'Value (in Select TAG)',
@@ -75,7 +75,7 @@ const commands = [
     },
     {
         name: 'Click Right (Context Menu)',
-        description: 'Command simulate context menu action (right click) on any page element.',
+        description: 'Simulate context menu action (right click) on any page element.',
         args: [
             {
                 name: 'Target Element',
@@ -85,11 +85,11 @@ const commands = [
     },
     {
         name: 'Mouse Over',
-        description: 'Command simulate mouse over event and appends all related with it actions (hover, focus etc.). During this command execution page need to have default zoom and target element need to be in visible part of page!',
+        description: 'Simulate mouse over event and append all actions related to it (hover, focus etc.). During execution of this command page needs to have default zoom set and target element needs to be in visible part of the page!',
         args: [
             {
                 name: 'Target Element',
-                description: 'Description of element on page for action.'
+                description: 'Description of element on which the action will be applied.'
             }
         ]
     },
@@ -103,17 +103,17 @@ const commands = [
             },
             {
                 name: 'Scroll By (px)',
-                description: 'Number of pixels to scroll.'
+                description: 'Number of pixels to scroll by.'
             },
         ]
     },
     {
         name: 'Set Break Between Commands',
-        description: 'Set time before every action executed on page.',
+        description: 'Set break time preceding any action execution on a page.',
         args: [
             {
                 name: 'Break Time',
-                description: 'Time in milliseconds to wait or "Settings Value" to restore standard time from settings.'
+                description: 'Time in milliseconds to wait or "Settings Value" to restore standard time from Settings.'
             },
         ]
     },
@@ -123,13 +123,13 @@ const commands = [
         args: [
             {
                 name: 'Break Time',
-                description: 'Time in milliseconds to wait or "Settings Value" to restore standard time from settings.'
+                description: 'Time in milliseconds to wait or "Settings Value" to restore standard time from Settings.'
             },
         ]
     },
     {
         name: 'Box Behaviour (confirm, alert)',
-        description: 'Command simulate action related to confirm/alert boxes. Need to be executed before box will be shown. Overlight will manage box and execute selected action instead of displaying it.',
+        description: 'Simulate action related to confirm/alert boxes. Need to be executed before box will be shown. Overlight will manage box and execute selected action instead of displaying it.',
         args: [
             {
                 name: 'Box Type',

@@ -8,6 +8,7 @@ import Contact from './Components/Contact/Contact';
 import Documentation from './Components/Documentation/Documentation';
 import NotReady from './Components/NotReady/NotReady';
 import QuickStart from './Components/QuickStart/QuickStart';
+import Headless from './Components/Headless/Headless';
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
         <Route path='/contact' component={Contact} />
         <Route path='/documentation' component={Documentation} />
         <Route path='/quickStart' component={QuickStart} />
+        <Route path='/headless' component={Headless} />
         <Redirect from="/" to="home" />
       </Switch>
     </div>

@@ -10,6 +10,7 @@ const tabs = [
     {key: '/home', label: 'Home', },
     {key: '/documentation', label: 'Documentation', },
     {key: '/quickStart', label: 'Quick Start', },
+    { key: '/headless', label: 'Overlight Headless', },
     {key: '/contact', label: 'Contact', },
 ]
 

@@ -10,9 +10,9 @@ export default () => {
                 </p>
                 <h3>Configuration</h3>
                 <p>1. Download and install chrome.</p>
-                <p>2. Download chromedriver <a>here</a> adjusted to chrome version on your machine.</p>
+                <p>2. Download chromedriver <a href='http://chromedriver.storage.googleapis.com/index.html'>here</a> adjusted to chrome version on your machine.</p>
                 <p>3. Add webdriver to environmental PATH.</p>
-                <p>4. Download Overlight Headless adjusted to your system <a>here</a>.</p>
+                <p>4. Download Overlight Headless adjusted to your system <a href='https://drive.google.com/open?id=1YaCt8iCE3FegPrwR9EWll_Izj-jCGJzb'>here</a>.</p>
                 <p>5. Rename it by remove system information from name and add to environmental PATH.</p>
                 <p>6. Run command below to see Overlight Headless parameters.</p>
                 <pre className='code'>

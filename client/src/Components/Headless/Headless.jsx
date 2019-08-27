@@ -20,11 +20,11 @@ export default () => {
                 </pre>
                 <p>7. Create credentials file.</p>
                 <pre className='code'>
-                    overlight-headless --mail="HERE_TYPE_MAIL" licensKey="HERE_TYPE_LICENSE_KEY"
+                    overlight-headless --mail="HERE_TYPE_MAIL" --licensKey="HERE_TYPE_LICENSE_KEY"
                 </pre>
                 <p>8. Run scenarios (you can change size of window for size tests was created with).</p>
                 <pre className='code'>
-                    overlight-headless --importedFiles="Scenarios.zip" executedTests="Scenario1" executedTests="Scenario2"
+                    overlight-headless --importedFiles="Scenarios.zip" --executedTests="Scenario1" --executedTests="Scenario2"
                 </pre>
                 <p>More details available in overlight-headless --help</p>
             </div>

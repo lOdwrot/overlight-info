@@ -1,0 +1,357 @@
+
+> overlight-page-server@1.0.0 start /home/overlight-page
+> nodemon --inspect index.js --exec babel-node --presets es2015,stage-2
+
+[33m[nodemon] 1.19.0[39m
+[33m[nodemon] to restart at any time, enter `rs`[39m
+[33m[nodemon] watching: *.*[39m
+[32m[nodemon] starting `babel-node --inspect index.js --presets es2015,stage-2`[39m
+events.js:167
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: EBADF: bad file descriptor, read
+Emitted 'error' event at:
+    at lazyFs.read (internal/fs/streams.js:165:12)
+    at FSReqWrap.wrapper [as oncomplete] (fs.js:460:17)
+npm ERR! code ELIFECYCLE
+npm ERR! errno 1
+npm ERR! overlight-page-server@1.0.0 start: `nodemon --inspect index.js --exec babel-node --presets es2015,stage-2`
+npm ERR! Exit status 1
+npm ERR! 
+npm ERR! Failed at the overlight-page-server@1.0.0 start script.
+npm ERR! This is probably not a problem with npm. There is likely additional logging output above.
+
+npm ERR! A complete log of this run can be found in:
+npm ERR!     /root/.npm/_logs/2019-05-15T21_50_06_358Z-debug.log
+Starting inspector on 127.0.0.1:9229 failed: address already in use
+
+> overlight-page-server@1.0.0 start /home/overlight-page
+> nodemon index.js --exec babel-node --presets es2015,stage-2
+
+[33m[nodemon] 1.19.0[39m
+[33m[nodemon] to restart at any time, enter `rs`[39m
+[33m[nodemon] watching: *.*[39m
+[32m[nodemon] starting `babel-node index.js --presets es2015,stage-2`[39m
+events.js:167
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: EBADF: bad file descriptor, read
+Emitted 'error' event at:
+    at lazyFs.read (internal/fs/streams.js:165:12)
+    at FSReqWrap.wrapper [as oncomplete] (fs.js:460:17)
+npm ERR! code ELIFECYCLE
+npm ERR! errno 1
+npm ERR! overlight-page-server@1.0.0 start: `nodemon index.js --exec babel-node --presets es2015,stage-2`
+npm ERR! Exit status 1
+npm ERR! 
+npm ERR! Failed at the overlight-page-server@1.0.0 start script.
+npm ERR! This is probably not a problem with npm. There is likely additional logging output above.
+
+npm ERR! A complete log of this run can be found in:
+npm ERR!     /root/.npm/_logs/2019-05-15T22_07_59_423Z-debug.log
+LISTENING ON http 80
+LISTENING ON https 443
+Wed, 15 May 2019 22:08:03 GMT express deprecated res.sendfile: Use res.sendFile instead at index.js:42:9
+
+> overlight-page-server@1.0.0 start /home/overlight-page
+> nodemon index.js --exec babel-node --presets es2015,stage-2
+
+[33m[nodemon] 1.19.0[39m
+[33m[nodemon] to restart at any time, enter `rs`[39m
+[33m[nodemon] watching: *.*[39m
+[32m[nodemon] starting `babel-node index.js --presets es2015,stage-2`[39m
+events.js:167
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: EBADF: bad file descriptor, read
+Emitted 'error' event at:
+    at lazyFs.read (internal/fs/streams.js:165:12)
+    at FSReqWrap.wrapper [as oncomplete] (fs.js:460:17)
+npm ERR! code ELIFECYCLE
+npm ERR! errno 1
+npm ERR! overlight-page-server@1.0.0 start: `nodemon index.js --exec babel-node --presets es2015,stage-2`
+npm ERR! Exit status 1
+npm ERR! 
+npm ERR! Failed at the overlight-page-server@1.0.0 start script.
+npm ERR! This is probably not a problem with npm. There is likely additional logging output above.
+
+npm ERR! A complete log of this run can be found in:
+npm ERR!     /root/.npm/_logs/2019-05-19T19_18_29_226Z-debug.log
+LISTENING ON http 80
+LISTENING ON https 443
+Sun, 19 May 2019 19:18:41 GMT express deprecated res.sendfile: Use res.sendFile instead at index.js:42:9
+
+> overlight-page-server@1.0.0 start /home/overlight-page
+> nodemon index.js --exec babel-node --presets es2015,stage-2
+
+[33m[nodemon] 1.19.0[39m
+[33m[nodemon] to restart at any time, enter `rs`[39m
+[33m[nodemon] watching: *.*[39m
+[32m[nodemon] starting `babel-node index.js --presets es2015,stage-2`[39m
+LISTENING ON http 80
+LISTENING ON https 443
+[32m[nodemon] restarting child process[39m
+
+> overlight-page-server@1.0.0 start /home/overlight-page
+> nodemon index.js --exec babel-node --presets es2015,stage-2
+
+[33m[nodemon] 1.19.0[39m
+[33m[nodemon] to restart at any time, enter `rs`[39m
+[33m[nodemon] watching: *.*[39m
+[32m[nodemon] starting `babel-node index.js --presets es2015,stage-2`[39m
+LISTENING ON http 80
+LISTENING ON https 443
+
+> overlight-page-server@1.0.0 start /home/overlight-page
+> nodemon index.js --exec babel-node --presets es2015,stage-2
+
+[33m[nodemon] 1.19.0[39m
+[33m[nodemon] to restart at any time, enter `rs`[39m
+[33m[nodemon] watching: *.*[39m
+[32m[nodemon] starting `babel-node index.js --presets es2015,stage-2`[39m
+LISTENING ON http 80
+LISTENING ON https 443
+events.js:167
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: listen EADDRINUSE :::80
+    at Server.setupListenHandle [as _listen2] (net.js:1286:14)
+    at listenInCluster (net.js:1334:12)
+    at Server.listen (net.js:1421:7)
+    at Object.<anonymous> (/home/overlight-page/index.js:33:12)
+    at Module._compile (internal/modules/cjs/loader.js:688:30)
+    at loader (/home/overlight-page/node_modules/babel-register/lib/node.js:144:5)
+    at Object.require.extensions.(anonymous function) [as .js] (/home/overlight-page/node_modules/babel-register/lib/node.js:154:7)
+    at Module.load (internal/modules/cjs/loader.js:598:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:537:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:529:3)
+Emitted 'error' event at:
+    at emitErrorNT (net.js:1313:8)
+    at process._tickCallback (internal/process/next_tick.js:63:19)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:744:11)
+    at Object.<anonymous> (/home/overlight-page/node_modules/babel-cli/lib/_babel-node.js:154:22)
+    at Module._compile (internal/modules/cjs/loader.js:688:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:699:10)
+    at Module.load (internal/modules/cjs/loader.js:598:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:537:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:529:3)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:741:12)
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m
+[32m[nodemon] restarting child process[39m
+[32m[nodemon] restarting child process[39m
+[32m[nodemon] starting `babel-node index.js --presets es2015,stage-2`[39m
+LISTENING ON http 80
+LISTENING ON https 443
+
+> overlight-page-server@1.0.0 start /home/overlight-page
+> nodemon index.js --exec babel-node --presets es2015,stage-2
+
+[33m[nodemon] 1.19.0[39m
+[33m[nodemon] to restart at any time, enter `rs`[39m
+[33m[nodemon] watching: *.*[39m
+[32m[nodemon] starting `babel-node index.js --presets es2015,stage-2`[39m
+LISTENING ON http 80
+LISTENING ON https 443
+Mon, 20 May 2019 08:22:57 GMT express deprecated res.sendfile: Use res.sendFile instead at index.js:42:9
+[32m[nodemon] restarting child process[39m
+
+> overlight-page-server@1.0.0 start /home/overlight-page
+> nodemon index.js --exec babel-node --presets es2015,stage-2
+
+[33m[nodemon] 1.19.0[39m
+[33m[nodemon] to restart at any time, enter `rs`[39m
+[33m[nodemon] watching: *.*[39m
+[32m[nodemon] starting `babel-node index.js --presets es2015,stage-2`[39m
+LISTENING ON http 80
+LISTENING ON https 443
+Mon, 20 May 2019 15:33:02 GMT express deprecated res.sendfile: Use res.sendFile instead at index.js:42:9
+[32m[nodemon] restarting child process[39m
+
+> overlight-page-server@1.0.0 start /home/overlight-page
+> nodemon index.js --exec babel-node --presets es2015,stage-2
+
+[33m[nodemon] 1.19.0[39m
+[33m[nodemon] to restart at any time, enter `rs`[39m
+[33m[nodemon] watching: *.*[39m
+[32m[nodemon] starting `babel-node index.js --presets es2015,stage-2`[39m
+LISTENING ON http 80
+LISTENING ON https 443
+Mon, 20 May 2019 15:41:51 GMT express deprecated res.sendfile: Use res.sendFile instead at index.js:42:9
+[32m[nodemon] restarting child process[39m
+
+> overlight-page-server@1.0.0 start /home/overlight-page
+> nodemon index.js --exec babel-node --presets es2015,stage-2
+
+[33m[nodemon] 1.19.0[39m
+[33m[nodemon] to restart at any time, enter `rs`[39m
+[33m[nodemon] watching: *.*[39m
+[32m[nodemon] starting `babel-node index.js --presets es2015,stage-2`[39m
+LISTENING ON http 80
+LISTENING ON https 443
+[32m[nodemon] restarting child process[39m
+
+> overlight-page-server@1.0.0 start /home/overlight-page
+> nodemon index.js --exec babel-node --presets es2015,stage-2
+
+[33m[nodemon] 1.19.0[39m
+[33m[nodemon] to restart at any time, enter `rs`[39m
+[33m[nodemon] watching: *.*[39m
+[32m[nodemon] starting `babel-node index.js --presets es2015,stage-2`[39m
+LISTENING ON http 80
+LISTENING ON https 443
+
+> overlight-page-server@1.0.0 start /home/overlight-page
+> nodemon index.js --exec babel-node --presets es2015,stage-2
+
+[33m[nodemon] 1.19.0[39m
+[33m[nodemon] to restart at any time, enter `rs`[39m
+[33m[nodemon] watching: *.*[39m
+[32m[nodemon] starting `babel-node index.js --presets es2015,stage-2`[39m
+LISTENING ON http 80
+LISTENING ON https 443
+events.js:167
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: listen EADDRINUSE :::80
+    at Server.setupListenHandle [as _listen2] (net.js:1286:14)
+    at listenInCluster (net.js:1334:12)
+    at Server.listen (net.js:1421:7)
+    at Object.<anonymous> (/home/overlight-page/index.js:33:12)
+    at Module._compile (internal/modules/cjs/loader.js:688:30)
+    at loader (/home/overlight-page/node_modules/babel-register/lib/node.js:144:5)
+    at Object.require.extensions.(anonymous function) [as .js] (/home/overlight-page/node_modules/babel-register/lib/node.js:154:7)
+    at Module.load (internal/modules/cjs/loader.js:598:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:537:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:529:3)
+Emitted 'error' event at:
+    at emitErrorNT (net.js:1313:8)
+    at process._tickCallback (internal/process/next_tick.js:63:19)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:744:11)
+    at Object.<anonymous> (/home/overlight-page/node_modules/babel-cli/lib/_babel-node.js:154:22)
+    at Module._compile (internal/modules/cjs/loader.js:688:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:699:10)
+    at Module.load (internal/modules/cjs/loader.js:598:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:537:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:529:3)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:741:12)
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m
+
+> overlight-page-server@1.0.0 start /home/overlight-page
+> nodemon index.js --exec babel-node --presets es2015,stage-2
+
+[33m[nodemon] 1.19.0[39m
+[33m[nodemon] to restart at any time, enter `rs`[39m
+[33m[nodemon] watching: *.*[39m
+[32m[nodemon] starting `babel-node index.js --presets es2015,stage-2`[39m
+LISTENING ON http 80
+LISTENING ON https 443
+events.js:167
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: listen EADDRINUSE :::80
+    at Server.setupListenHandle [as _listen2] (net.js:1286:14)
+    at listenInCluster (net.js:1334:12)
+    at Server.listen (net.js:1421:7)
+    at Object.<anonymous> (/home/overlight-page/index.js:33:12)
+    at Module._compile (internal/modules/cjs/loader.js:688:30)
+    at loader (/home/overlight-page/node_modules/babel-register/lib/node.js:144:5)
+    at Object.require.extensions.(anonymous function) [as .js] (/home/overlight-page/node_modules/babel-register/lib/node.js:154:7)
+    at Module.load (internal/modules/cjs/loader.js:598:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:537:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:529:3)
+Emitted 'error' event at:
+    at emitErrorNT (net.js:1313:8)
+    at process._tickCallback (internal/process/next_tick.js:63:19)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:744:11)
+    at Object.<anonymous> (/home/overlight-page/node_modules/babel-cli/lib/_babel-node.js:154:22)
+    at Module._compile (internal/modules/cjs/loader.js:688:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:699:10)
+    at Module.load (internal/modules/cjs/loader.js:598:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:537:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:529:3)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:741:12)
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m
+
+> overlight-page-server@1.0.0 start /home/overlight-page
+> nodemon index.js --exec babel-node --presets es2015,stage-2
+
+[33m[nodemon] 1.19.0[39m
+[33m[nodemon] to restart at any time, enter `rs`[39m
+[33m[nodemon] watching: *.*[39m
+[32m[nodemon] starting `babel-node index.js --presets es2015,stage-2`[39m
+LISTENING ON http 80
+LISTENING ON https 443
+events.js:167
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: listen EADDRINUSE :::80
+    at Server.setupListenHandle [as _listen2] (net.js:1286:14)
+    at listenInCluster (net.js:1334:12)
+    at Server.listen (net.js:1421:7)
+    at Object.<anonymous> (/home/overlight-page/index.js:33:12)
+    at Module._compile (internal/modules/cjs/loader.js:688:30)
+    at loader (/home/overlight-page/node_modules/babel-register/lib/node.js:144:5)
+    at Object.require.extensions.(anonymous function) [as .js] (/home/overlight-page/node_modules/babel-register/lib/node.js:154:7)
+    at Module.load (internal/modules/cjs/loader.js:598:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:537:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:529:3)
+Emitted 'error' event at:
+    at emitErrorNT (net.js:1313:8)
+    at process._tickCallback (internal/process/next_tick.js:63:19)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:744:11)
+    at Object.<anonymous> (/home/overlight-page/node_modules/babel-cli/lib/_babel-node.js:154:22)
+    at Module._compile (internal/modules/cjs/loader.js:688:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:699:10)
+    at Module.load (internal/modules/cjs/loader.js:598:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:537:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:529:3)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:741:12)
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m
+[32m[nodemon] restarting child process[39m
+[32m[nodemon] restarting child process[39m
+[32m[nodemon] starting `babel-node index.js --presets es2015,stage-2`[39m
+LISTENING ON http 80
+LISTENING ON https 443
+
+> overlight-page-server@1.0.0 start /home/overlight-page
+> nodemon index.js --exec babel-node --presets es2015,stage-2
+
+[33m[nodemon] 1.19.0[39m
+[33m[nodemon] to restart at any time, enter `rs`[39m
+[33m[nodemon] watching: *.*[39m
+[32m[nodemon] starting `babel-node index.js --presets es2015,stage-2`[39m
+LISTENING ON http 80
+LISTENING ON https 443
+Mon, 20 May 2019 22:20:26 GMT express deprecated res.sendfile: Use res.sendFile instead at index.js:42:9
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `babel-node index.js --presets es2015,stage-2`[39m
+LISTENING ON http 80
+LISTENING ON https 443
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `babel-node index.js --presets es2015,stage-2`[39m
+LISTENING ON http 80
+LISTENING ON https 443
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `babel-node index.js --presets es2015,stage-2`[39m
+LISTENING ON http 80
+LISTENING ON https 443
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `babel-node index.js --presets es2015,stage-2`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `babel-node index.js --presets es2015,stage-2`[39m
+LISTENING ON http 80
+LISTENING ON https 443
+Wed, 17 Jul 2019 01:24:01 GMT express deprecated res.sendfile: Use res.sendFile instead at index.js:42:9

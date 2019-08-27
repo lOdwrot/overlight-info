@@ -153,7 +153,7 @@ const commands = [
     },
     {
         name: 'Type In',
-        description: 'Just reload current page.',
+        description: 'Type text to selected input.',
         args: [
             {
                 name: 'Target Element',
@@ -162,6 +162,10 @@ const commands = [
             {
                 name: 'Value',
                 description: 'Value of enetered text.'
+            },
+            {
+                name: 'keyDown-keyUp events',
+                description: 'Simulate every single key up and key down event (used for inputs that have listeners for any of this events)'
             }
         ]
     },

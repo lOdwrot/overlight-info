@@ -256,6 +256,78 @@ const commands = [
         ]
     },
     {
+        name: 'Assert Not Equals',
+        description: 'Check whether two values are different the same.',
+        args: [
+            {
+                name: 'Not Expected Value',
+                description: 'Value of text or variable that will be compared.'
+            },
+            {
+                name: 'Actual Value',
+                description: 'Actual Value of text or variable.'
+            },
+        ]
+    },
+    {
+        name: 'Check Element Exist',
+        description: 'Check whether element with given description is present on page.',
+        args: [
+            {
+                name: 'Target Element',
+                description: 'Description of an element to check.'
+            },
+        ]
+    },
+    {
+        name: 'Check Element Not Exist',
+        description: 'Check whether element with given description is not present on page.',
+        args: [
+            {
+                name: 'Target Element',
+                description: 'Description of an element to check.'
+            },
+        ]
+    },
+    {
+        name: 'Comment',
+        description: 'Text that appear as a step with a vital information. This command is ignored during execution process.',
+        args: [
+            {
+                name: 'Comment',
+                description: 'Content of a comment.'
+            },
+            {
+                name: 'Color',
+                description: 'Background color of a comment command.'
+            },
+        ]
+    },
+    {
+        name: 'Open New Tab',
+        description: 'Create a new tab in a browser and set context for it.',
+        args: [
+            {
+                name: 'Page URL',
+                description: 'URL of page that will be open in new tab.'
+            }
+        ]
+    },
+    {
+        name: 'Switch Tab/Window',
+        description: 'Changes context of window where scenario is executed.',
+        args: [
+            {
+                name: 'Selection Method',
+                description: 'Determines whether the context should be set for newest tab, oldest tab or it should be found by fragment of url address.'
+            },
+            {
+                name: 'URL Fragment',
+                description: 'Fragment of URL that will be used to find a page (for Containing URL selection method).'
+            },
+        ]
+    },
+    {
         name: 'Set Performance Point',
         description: 'Set timestamp used later in execution time analysis.',
         args: [
@@ -275,4 +347,4 @@ const commands = [
             },
         ]
     },
-]
+].sort((a, b) => a.name > b.name ? 1 : -1)

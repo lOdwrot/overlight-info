@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { Divider } from 'antd'
+import { Divider, Icon } from 'antd'
 import TypeAndClick from './TypeAndClick';
 import Hover from './Hover';
 import DragAndDrop from './DragAndDrop';
@@ -13,7 +13,7 @@ import styles from './QuickStart.module.scss'
 import classnames from 'classnames'
 import AssertEquals from './AssertEquals';
 
-const introduction = `This page was created as sandbox and is great entry point to start with Overilght.`
+const introduction = `This page was created as sandbox and is great entry point to start with Overilght. There is also video tutorial available.`
 
 export default () => {
     const [stepsStatus, setStepsStatus] = useState([...Array(8)].reduce((acc, v, index) => ({...acc, [index]: false}), {}))
@@ -49,7 +49,17 @@ export default () => {
                 <div className={classnames('frame-item-container', styles['main-frame'])} >
                     <div className='frame-item'>
                         <div className='frame-content-text'>
-                            {introduction}
+                            <div>
+                                {introduction}
+                            </div>
+                            <div>
+                                <a href='https://www.youtube.com/watch?v=b1RwM-epNfw'>
+                                    <span style={{color: '#0b5aa3'}}>
+                                        <Icon type="youtube" style={{marginRight: '10px'}}/>
+                                    </span>
+                                    Video Tutorial
+                                </a>
+                            </div>
                         </div>
                         <Divider orientation="left">Preparation</Divider>
                         <div className='frame-content-text'>

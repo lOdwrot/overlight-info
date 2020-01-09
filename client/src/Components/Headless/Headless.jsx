@@ -22,7 +22,7 @@ export default () => {
                 <pre className='code'>
                     overlight-headless --mail="HERE_TYPE_MAIL" --licensKey="HERE_TYPE_LICENSE_KEY"
                 </pre>
-                <p>8. Run scenarios (you can change size of window for size tests was created with).</p>
+                <p>8. Run scenarios (from local file or EasyShare).</p>
                 <pre className='code'>
                     overlight-headless --importedFiles="Scenarios.zip" --executedTests="Scenario1" --executedTests="Scenario2"
                 </pre>

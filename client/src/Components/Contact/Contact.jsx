@@ -34,6 +34,14 @@ export default () => (
                     </span>
                      overlight.automation@gmail.com
                 </div>
+                <div>
+                    <a href='https://www.youtube.com/watch?v=b1RwM-epNfw'>
+                        <span style={{color: '#0b5aa3'}}>
+                            <Icon type="youtube" style={{marginRight: '10px'}}/>
+                        </span>
+                        YouToube Channel
+                    </a>
+                </div>
             </div>
         </div>
     </div>

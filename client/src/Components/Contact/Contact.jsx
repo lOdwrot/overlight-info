@@ -18,6 +18,18 @@ export default () => (
                 </div>
                 <div>
                     <span style={{color: '#0b5aa3'}}>
+                        <Icon type="bank" style={{marginRight: '10px'}}/>
+                    </span>
+                     NIP: 9730910883
+                </div>
+                <div>
+                    <span style={{color: '#0b5aa3'}}>
+                        <Icon type="phone" style={{marginRight: '10px'}}/>
+                    </span>
+                     +48 725 495 338
+                </div>
+                <div>
+                    <span style={{color: '#0b5aa3'}}>
                         <Icon type="mail" style={{marginRight: '10px'}}/>
                     </span>
                      overlight.automation@gmail.com

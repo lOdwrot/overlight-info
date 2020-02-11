@@ -52,6 +52,10 @@ export default () => {
                         </div>
                     ))
                 }
+                <Divider orientation="left">XPath</Divider>
+                <div className='frame-content-text'>
+                   {"You can use standard XPath selectors to find element on page. You can define it as plain text or use tokens $v{VARIABLE_NAME} that will be replaced by proper variable during execution. XPath should be used only in unlikely cases to build reference to element inside of a page structure. Use it only when neither Unique Property neither Element Link is sufficient to match your requirements."}
+                </div>
                 <Divider orientation="left">IFrame Path</Divider>
                 <div className='frame-content-text'>
                     After description to element was created you need to set proper IFrame path. You can do this in command creator window by pressing warning icon button. Anchor and target elements for Elements Link need to be in the same frame (root window or same iframe).

@@ -84,6 +84,16 @@ const commands = [
         ]
     },
     {
+        name: 'Double Click',
+        description: 'Simulate double click on any page element.',
+        args: [
+            {
+                name: 'Target Element',
+                description: 'Description of element on page that will be clicked.'
+            }
+        ]
+    },
+    {
         name: 'Mouse Over',
         description: 'Simulate mouse over event and append all actions related to it (hover, focus etc.). During execution of this command page needs to have default zoom set and target element needs to be in visible part of the page!',
         args: [
@@ -114,6 +124,34 @@ const commands = [
             {
                 name: 'Break Time',
                 description: 'Time in milliseconds to wait or "Settings Value" to restore standard time from Settings.'
+            },
+        ]
+    },
+    {
+        name: 'Wait Until Element Appear',
+        description: 'Wait with execution until an element with a given description will appear on a page. In case an element will be not available in time defined as max waiting time parameter, scenario will fail.',
+        args: [
+            {
+                name: 'Target Element',
+                description: 'Description of an element that need to be available on a page to continue execution.'
+            },
+            {
+                name: 'Max Waiting Time',
+                description: 'Time limit for element to appear on page.'
+            },
+        ]
+    },
+    {
+        name: 'Wait Until Element Disappear',
+        description: 'Wait with execution until an element with a given description will be not visible on a page. In case an element will be available in time defined as max waiting time parameter, scenario will fail.',
+        args: [
+            {
+                name: 'Target Element',
+                description: 'Description of an element that need to be not available on a page to continue execution.'
+            },
+            {
+                name: 'Max Waiting Time',
+                description: 'Time limit for element to appear on page.'
             },
         ]
     },
@@ -345,6 +383,12 @@ const commands = [
                 name: 'Lockers State',
                 description: 'Set wheter lockers should be enabled (on) or disabled ("off").'
             },
+        ]
+    },
+    {
+        name: 'Init Variables',
+        description: 'This command should be used when your scenario will use data from CSV file in Overlight Headless. It let you initialize sequence of variables that will be used to create your test. This step will be ignored by Overlight Headless. Instead of it, use parameter --executedTests=TEST_NAME>INIT_DATA.csv. In a csv file first row defines names of variables. Scenario will be repeated for every row in a file and executed with different variable values initialized.',
+        args: [
         ]
     },
 ].sort((a, b) => a.name > b.name ? 1 : -1)

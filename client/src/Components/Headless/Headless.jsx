@@ -26,6 +26,11 @@ export default () => {
                 <pre className='code'>
                     overlight-headless --importedFiles="Scenarios.zip" --executedTests="Scenario1" --executedTests="Scenario2"
                 </pre>
+                <h3>Load Data from csv file</h3>
+                <p>You can use syntax below to load data from csv file that will be available as variables inside your scenario. CSV need to be valid file with ";" as a separator between fields. First row define names of variables. Scenario will be executed for every row in csv file.</p>
+                <pre className='code'>
+                    overlight-headless --importedFiles="Scenarios.zip" --executedTests="Scenario1>data.csv"
+                </pre>
                 <p>More details available in overlight-headless --help</p>
             </div>
         </div>

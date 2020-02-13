@@ -42,6 +42,14 @@ export default () => (
                         YouToube Channel
                     </a>
                 </div>
+                <div>
+                    <a href='https://www.overlightsoftware.pl/privacyPolicy'>
+                        <span style={{color: '#0b5aa3'}}>
+                            <Icon type="form" style={{marginRight: '10px'}}/>
+                        </span>
+                        Privacy Policy
+                    </a>
+                </div>
             </div>
         </div>
     </div>

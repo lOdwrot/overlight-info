@@ -20,8 +20,10 @@ const httpsSever = https.createServer(httpsOptions, app)
 //Static file declaration
 app.use(express.static(path.join(__dirname, 'client/build')));
 
+app.get('/privacyPolicy', (req, res) => res.sendfile(path.join(__dirname, 'PrivacyPolicy.html')))
+
 app.get('*', (req, res) => {
-    res.sendfile(path.join(__dirname = 'client/build/index.html'));
+    res.sendfile(path.join(__dirname, 'client/build/index.html'));
 })
 
 httpApp.get('*', (req, res) => {

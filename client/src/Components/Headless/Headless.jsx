@@ -20,7 +20,7 @@ export default () => {
                 </pre>
                 <p>7. Create credentials file.</p>
                 <pre className='code'>
-                    overlight-headless --mail="HERE_TYPE_MAIL" --licensKey="HERE_TYPE_LICENSE_KEY"
+                    overlight-headless --mail="HERE_TYPE_MAIL" --licenseKey="HERE_TYPE_LICENSE_KEY"
                 </pre>
                 <p>8. Run scenarios (from local file or EasyShare).</p>
                 <pre className='code'>

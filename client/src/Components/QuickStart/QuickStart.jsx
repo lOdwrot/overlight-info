@@ -19,7 +19,6 @@ export default () => {
     const [stepsStatus, setStepsStatus] = useState([...Array(8)].reduce((acc, v, index) => ({...acc, [index]: false}), {}))
     const setStepStatus = (stepNumb) => (value) => {
         const nextState = {...stepsStatus, [stepNumb]: value}
-        console.log('nextSteps', nextState)
         setStepsStatus(nextState)
     }
 
@@ -64,7 +63,7 @@ export default () => {
                         <Divider orientation="left">Preparation</Divider>
                         <div className='frame-content-text'>
                             <div>1. Download overlight from Chrome Web Store (<a href='https://chrome.google.com/webstore/detail/overlight-test-automation/omngiidfgggcagkekmiiphinjmidppij'>here</a>)</div>
-                            <div>2. Download scenario that lead you throug Quick Start (<a href='https://drive.google.com/file/d/1JfB2vL0HyvLpxbF-cV8LhudVjKFb_fMQ/view?usp=sharing'>here</a>)</div>
+                            <div>2. Download scenario that lead you throug Quick Start (<a href='https://drive.google.com/file/d/1JfB2vL0HyvLpxbF-cV8LhudVjKFb_fMQ/view?usp=sharing'>here</a>) or use easy share: OL_ES://overlight.automation@gmail.com/Quick Start.zip</div>
                             <div>3. Import Scenario to Overlight (Button Import Scenarios on left sidebar)</div>
                             <div>4. Click Set Card and select tab where scenario will be executed (click any element on this page)</div>
                             <div>5. Play imported scenario (Quick Start) or open and modifie it</div>

@@ -26,7 +26,6 @@ export default ({setStepStatus}) => {
     const changeInput = (e) => {
         const value = e.target.value
         setInput(e.target.value)
-        console.log('X', value, expectedInput, value === expectedInput)
         if(value === expectedInput) {setStepStatus(true)}
     }
 
